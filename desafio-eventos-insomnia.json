@@ -1,0 +1,425 @@
+﻿{
+  "type": "collection.insomnia.rest/5.0",
+  "schema_version": "5.1",
+  "name": "API Gestão de Eventos",
+  "meta": {
+    "id": "wrk_2c76ba9105fe4be1a1dd4850a0296e35",
+    "created": 1764345708025,
+    "modified": 1764345708025,
+    "description": ""
+  },
+  "collection": [
+    {
+      "url": "http://localhost:3333/register",
+      "name": "Register Organizer",
+      "meta": {
+        "id": "req_67b13c3eedb74926a8e3eccf0810d5dc",
+        "created": 1764345711906,
+        "modified": 1764362348644,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1764345711906
+      },
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"fullName\": \"João Organizer\",\n  \"email\": \"joao@teste.com\",\n  \"password\": \"654321\",\n  \"cpf\": \"00987654321\",\n  \"role\": \"ORGANIZER\"\n}"
+      },
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/12.0.0"
+        }
+      ],
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    },
+    {
+      "url": "http://localhost:3333/login",
+      "name": "Login Organizer",
+      "meta": {
+        "id": "req_f37c8795b04d4525adb9ea08edc2e3d8",
+        "created": 1764346272642,
+        "modified": 1764364618087,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1764346272642
+      },
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"email\": \"joao@teste.com\",\n  \"password\": \"654321\"\n}"
+      },
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/12.0.0"
+        }
+      ],
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    },
+    {
+      "url": "http://localhost:3333/events",
+      "name": "Criar evento",
+      "meta": {
+        "id": "req_7c56958559084c5d8f8bc258b4f89ca0",
+        "created": 1764347453091,
+        "modified": 1764362388539,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1764347453091
+      },
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Workshop AdonisJS\",\n  \"description\": \"Aprenda Clean Architecture\",\n  \"date\": \"2025-12-25 14:00:00\",\n  \"location\": \"Online\",\n  \"capacity\": 50\n}"
+      },
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/12.0.0"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "oat_MQ.clRFTVpteGtIajZsZ1VuS1ZXSV9wMHVYbWZRMmlzNzFUUmtZTWx4eTY0NjYyMjY3Mg"
+      },
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    },
+    {
+      "url": "http://localhost:3333/register",
+      "name": "Register Participant",
+      "meta": {
+        "id": "req_f4564175b881462a86f197d9310d2800",
+        "created": 1764361802448,
+        "modified": 1764362934477,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1763958355055.5
+      },
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"fullName\": \"Pedro Developer\",\n  \"email\": \"pedro@teste.com\",\n  \"password\": \"123456\",\n  \"cpf\": \"12345678900\",\n  \"role\": \"PARTICIPANT\"\n}"
+      },
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/12.0.0"
+        }
+      ],
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    },
+    {
+      "url": "http://localhost:3333/login",
+      "name": "Login Participant",
+      "meta": {
+        "id": "req_8f3aa644a74049edb8bcaf1ea5114f5e",
+        "created": 1764361900232,
+        "modified": 1764364552681,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1764345992274
+      },
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"email\": \"pedro@teste.com\",\n  \"password\": \"123456\"\n}"
+      },
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/12.0.0"
+        }
+      ],
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    },
+    {
+      "url": "http://localhost:3333/events/1/register",
+      "name": "Inscrição",
+      "meta": {
+        "id": "req_aa3aeeafe25d43b69a7341a7d3a3cfc5",
+        "created": 1764362022310,
+        "modified": 1764362416907,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1764362022310
+      },
+      "method": "POST",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/12.0.0"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "oat_Mg.RWtsVm1JWEJMai1hSk5KbUI4MHRSZmtTU1BDdU1peWZsVmpWRTN5UjE5NTc2MzM2OTQ"
+      },
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    },
+    {
+      "url": "http://localhost:3333/events",
+      "name": "Listar Eventos",
+      "meta": {
+        "id": "req_d94c47f450ee43f5baeabea42a906295",
+        "created": 1764364384865,
+        "modified": 1764364427906,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1764364384865
+      },
+      "method": "GET",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/12.0.0"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "oat_Mg.RWtsVm1JWEJMai1hSk5KbUI4MHRSZmtTU1BDdU1peWZsVmpWRTN5UjE5NTc2MzM2OTQ"
+      },
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    },
+    {
+      "url": "http://localhost:3333/events/2",
+      "name": "Ver Evento",
+      "meta": {
+        "id": "req_ab9b126f79d14ae285ca5bf03f6cee09",
+        "created": 1764364476173,
+        "modified": 1764365084825,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1764364476173
+      },
+      "method": "GET",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/12.0.0"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "oat_MQ.clRFTVpteGtIajZsZ1VuS1ZXSV9wMHVYbWZRMmlzNzFUUmtZTWx4eTY0NjYyMjY3Mg"
+      },
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    },
+    {
+      "url": "http://localhost:3333/me/events",
+      "name": "Meus Eventos",
+      "meta": {
+        "id": "req_f9194cd4a20e47588cd1dbd48027dadf",
+        "created": 1764364526293,
+        "modified": 1764364558629,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1764364526293
+      },
+      "method": "GET",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/12.0.0"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "oat_Mg.RWtsVm1JWEJMai1hSk5KbUI4MHRSZmtTU1BDdU1peWZsVmpWRTN5UjE5NTc2MzM2OTQ"
+      },
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    },
+    {
+      "url": "http://localhost:3333/events/2",
+      "name": "Atualizar Evento",
+      "meta": {
+        "id": "req_b59dbf250a8e4f11a780674b89403866",
+        "created": 1764364569097,
+        "modified": 1764365095409,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1764364569097
+      },
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Workshop AdonisJS 6 (Atualizado)\",\n  \"location\": \"Auditório Principal\"\n}"
+      },
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/12.0.0"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "oat_MQ.clRFTVpteGtIajZsZ1VuS1ZXSV9wMHVYbWZRMmlzNzFUUmtZTWx4eTY0NjYyMjY3Mg"
+      },
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    },
+    {
+      "url": "http://localhost:3333/events/1",
+      "name": "Deletar Evento",
+      "meta": {
+        "id": "req_2d3188f7f5744a05ae34e63301b835de",
+        "created": 1764364604625,
+        "modified": 1764364623317,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1764364604625
+      },
+      "method": "DELETE",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/12.0.0"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "oat_MQ.clRFTVpteGtIajZsZ1VuS1ZXSV9wMHVYbWZRMmlzNzFUUmtZTWx4eTY0NjYyMjY3Mg"
+      },
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    }
+  ],
+  "cookieJar": {
+    "name": "Default Jar",
+    "meta": {
+      "id": "jar_07f4194edf966697614a2b568429bc803ee4e814",
+      "created": 1764345708034,
+      "modified": 1764345708034
+    }
+  },
+  "environments": {
+    "name": "Base Environment",
+    "meta": {
+      "id": "env_07f4194edf966697614a2b568429bc803ee4e814",
+      "created": 1764345708029,
+      "modified": 1764345708029,
+      "isPrivate": false
+    }
+  }
+}
